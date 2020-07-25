@@ -24,7 +24,7 @@ def bubble_sort(l, is_display=True):
                 l[i + 1] = t
                 finished = False
             if is_display:
-                presenter.show(
+                presenter.show_swap(
                     index=i,
                     target=i + 1,
                     before_list=before,

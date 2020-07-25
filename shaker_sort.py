@@ -44,7 +44,7 @@ def shaker_sort(l, is_display=True):
                     l = _swap(l, i, target)
                     finished = False
             if is_display:
-                presenter.show(
+                presenter.show_swap(
                     index=i,
                     target=target,
                     before_list=before,
