@@ -1,7 +1,7 @@
 import copy
 import random
 
-from presenter import SinglePresenter
+from presenter import SortPresenter
 
 SIZE = 10
 PAUSE_SEC = 0.3
@@ -18,7 +18,7 @@ def _swap(lst, i, t):
 def insertion_sort(l, is_display=True):
     counter = 0
     if is_display:
-        presenter = SinglePresenter(SIZE)
+        presenter = SortPresenter(SIZE)
 
     for i in range(SIZE):
         idx = i

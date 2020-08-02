@@ -1,10 +1,10 @@
 import copy
 import random
 
-from presenter import SinglePresenter
+from presenter import SortPresenter
 
 SIZE = 10
-PAUSE_SEC = 0.2
+PAUSE_SEC = 0.3
 IS_DISPLAY = True
 
 
@@ -20,7 +20,7 @@ def shaker_sort(l, is_display=True):
     is_reverse = False
     counter = 0
     if is_display:
-        presenter = SinglePresenter(SIZE)
+        presenter = SortPresenter(SIZE)
 
     while not finished:
         finished = True

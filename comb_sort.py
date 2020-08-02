@@ -1,7 +1,7 @@
 import copy
 import random
 
-from presenter import SinglePresenter
+from presenter import SortPresenter
 
 SIZE = 10
 PAUSE_SEC = 0.3
@@ -20,7 +20,7 @@ def comb_sort(l, is_display=True):
     counter = 0
     is_swapped = True
     if is_display:
-        presenter = SinglePresenter(SIZE)
+        presenter = SortPresenter(SIZE)
 
     while not (interval == 1 and not is_swapped):
         is_swapped = False

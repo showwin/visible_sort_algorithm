@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-class SinglePresenter:
+class SortPresenter:
     def __init__(self, list_size):
         self.size = list_size
         self.x = np.array([e + 1 for e in range(list_size)])
